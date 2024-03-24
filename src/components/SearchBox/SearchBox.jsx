@@ -13,7 +13,7 @@ export default function SearchBox() {
         <div className={css.searchBoxWrap}>
             <p>Find contacts by name</p>
             <input 
-                className={css.SearchBoxInput}
+                className={css.searchBoxInput}
                 type="text" 
                 value={filterValue}
                 onChange={(event) => dispatch(changeFilter(event.target.value))}
