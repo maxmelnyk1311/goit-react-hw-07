@@ -58,7 +58,7 @@ export const selectLoading = (state) => state.contacts.loading;
 export const selectError = (state) => state.contacts.error;
 
 
-export const selectVisivleContacts = createSelector(
+export const selectFilteredContacts = createSelector(
     [selectContacts, selectNameFilter], 
     (contacts, filterValue) => {
         return contacts.filter((contact) => 
